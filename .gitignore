@@ -1,0 +1,99 @@
+# ========================
+# Visual Studio
+# ========================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ========================
+# Build results
+# ========================
+*.obj
+*.pch
+*.exe
+*.dll
+*.lib
+*.app
+*.iobj
+*.ipdb
+*.pdb
+*.idb
+
+# ========================
+# Visual Studio IntelliSense
+# ========================
+*.ipch
+*.tlog
+*.lastbuildstate
+*.VC.db
+*.VC.opendb
+
+# ========================
+# Others
+# ========================
+[Bb]in/
+[Oo]bj/
+*.log
+*.cache
+*.sconsign.dblite
+*.orig
+
+# ========================
+# GitHub large file exceptions
+# ========================
+*.vspscc
+*.vssscc
+
+# ========================
+# Node / npm / temp files (optional)
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# debug information files
+*.dwo

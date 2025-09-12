@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{733E8DF0-0AA4-45E5-B0B8-87A935143DA9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyDx</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DH);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(DL);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);﻿;$(DH);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;﻿;$(DL);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Geometry\InGame\AactiveTask\Admin_Admin.cpp" />
+    <ClCompile Include="Geometry\InGame\AactiveTask\Admin_SwipeCard.cpp" />
+    <ClCompile Include="Manager\CrewManager.cpp" />
+    <ClCompile Include="Manager\ImposterManager.cpp" />
+    <ClCompile Include="Manager\GuitarClass.cpp" />
+    <ClCompile Include="Manager\EndAniManager.cpp" />
+    <ClCompile Include="Geometry\InGame\AactiveTask\O2_ClienFilter.cpp" />
+    <ClCompile Include="TcpClient\MatchingClient.cpp" />
+    <ClCompile Include="TcpClient\ClientData.cpp" />
+    <ClCompile Include="Geometry\InGame\AnimationPlayerMesh.cpp" />
+    <ClCompile Include="Geometry\ColorMesh.cpp" />
+    <ClCompile Include="Manager\BackgroundManager.cpp" />
+    <ClCompile Include="Geometry\InGame\AnotherPlayer.cpp" />
+    <ClCompile Include="Geometry\AnimationMesh.cpp" />
+    <ClCompile Include="Manager\FontManager.cpp" />
+    <ClCompile Include="FW1\CFW1ColorRGBA.cpp" />
+    <ClCompile Include="FW1\CFW1ColorRGBAInterface.cpp" />
+    <ClCompile Include="FW1\CFW1DWriteRenderTarget.cpp" />
+    <ClCompile Include="FW1\CFW1DWriteRenderTargetInterface.cpp" />
+    <ClCompile Include="FW1\CFW1Factory.cpp" />
+    <ClCompile Include="FW1\CFW1FactoryInterface.cpp" />
+    <ClCompile Include="FW1\CFW1FontWrapper.cpp" />
+    <ClCompile Include="FW1\CFW1FontWrapperInterface.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphAtlas.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphAtlasInterface.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphProvider.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphProviderInterface.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphRenderStates.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphRenderStatesInterface.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphSheet.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphSheetInterface.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphVertexDrawer.cpp" />
+    <ClCompile Include="FW1\CFW1GlyphVertexDrawerInterface.cpp" />
+    <ClCompile Include="FW1\CFW1StateSaver.cpp" />
+    <ClCompile Include="FW1\CFW1TextGeometry.cpp" />
+    <ClCompile Include="FW1\CFW1TextGeometryInterface.cpp" />
+    <ClCompile Include="FW1\CFW1TextRenderer.cpp" />
+    <ClCompile Include="FW1\CFW1TextRendererInterface.cpp" />
+    <ClCompile Include="FW1\FW1FontWrapper.cpp" />
+    <ClCompile Include="Geometry\InGame\AactiveTask\CafeTeria_UploadData.cpp" />
+    <ClCompile Include="Geometry\InGame\BackGroundImage.cpp" />
+    <ClCompile Include="Geometry\Debug\DebugPlayer.cpp" />
+    <ClCompile Include="Geometry\Debug\DebugMap.cpp" />
+    <ClCompile Include="Geometry\AnimationRect.cpp" />
+    <ClCompile Include="Manager\AnimationManager.cpp" />
+    <ClCompile Include="Geometry\Mesh.cpp" />
+    <ClCompile Include="Geometry\Line.cpp" />
+    <ClCompile Include="Manager\ImageManager.cpp" />
+    <ClCompile Include="Manager\MapManager.cpp" />
+    <ClCompile Include="Manager\SceneManager.cpp" />
+    <ClCompile Include="Manager\PlayerManager.cpp" />
+    <ClCompile Include="Geometry\InGame\Mesh_player.cpp" />
+    <ClCompile Include="Geometry\InGame\AactiveTask\Sequrity_Sequrity.cpp" />
+    <ClCompile Include="Util\RenderTargetTexture.cpp" />
+    <ClCompile Include="System\Camera.cpp" />
+    <ClCompile Include="Graphic.cpp" />
+    <ClCompile Include="PipeLine\BufferResource\BufferResource.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="PipeLine\Shader\Shader.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="System\Mouse.cpp" />
+    <ClCompile Include="System\Time.cpp" />
+    <ClCompile Include="System\Window.cpp" />
+    <ClCompile Include="Geometry\InGame\Task.cpp" />
+    <ClCompile Include="Manager\TaskManager.cpp" />
+    <ClCompile Include="Geometry\InGame\Ui.cpp" />
+    <ClCompile Include="Manager\UiManager.cpp" />
+    <ClCompile Include="Geometry\InGame\Ui_inGameRect.cpp" />
+    <ClCompile Include="Manager\TaskActtiveManager.cpp" />
+    <ClCompile Include="Util\Keyboard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Geometry\InGame\AactiveTask\Admin_Admin.h" />
+    <ClInclude Include="Geometry\InGame\AactiveTask\Admin_SwipeCard.h" />
+    <ClInclude Include="Manager\CrewManager.h" />
+    <ClInclude Include="Manager\ImposterManager.h" />
+    <ClInclude Include="Manager\GuitarClass.h" />
+    <ClInclude Include="Manager\EndAniManager.h" />
+    <ClInclude Include="Geometry\InGame\AactiveTask\O2_ClienFilter.h" />
+    <ClInclude Include="TcpClient\MatchingClient.h" />
+    <ClInclude Include="TcpClient\ClientData.h" />
+    <ClInclude Include="Geometry\InGame\AnimationPlayerMesh.h" />
+    <ClInclude Include="Geometry\ColorMesh.h" />
+    <ClInclude Include="Manager\BackgroundManager.h" />
+    <ClInclude Include="Geometry\InGame\AnotherPlayer.h" />
+    <ClInclude Include="Geometry\AnimationMesh.h" />
+    <ClInclude Include="Manager\FontManager.h" />
+    <ClInclude Include="FW1\CFW1ColorRGBA.h" />
+    <ClInclude Include="FW1\CFW1DWriteRenderTarget.h" />
+    <ClInclude Include="FW1\CFW1Factory.h" />
+    <ClInclude Include="FW1\CFW1FontWrapper.h" />
+    <ClInclude Include="FW1\CFW1GlyphAtlas.h" />
+    <ClInclude Include="FW1\CFW1GlyphProvider.h" />
+    <ClInclude Include="FW1\CFW1GlyphRenderStates.h" />
+    <ClInclude Include="FW1\CFW1GlyphSheet.h" />
+    <ClInclude Include="FW1\CFW1GlyphVertexDrawer.h" />
+    <ClInclude Include="FW1\CFW1Object.h" />
+    <ClInclude Include="FW1\CFW1StateSaver.h" />
+    <ClInclude Include="FW1\CFW1TextGeometry.h" />
+    <ClInclude Include="FW1\CFW1TextRenderer.h" />
+    <ClInclude Include="FW1\FW1CompileSettings.h" />
+    <ClInclude Include="FW1\FW1FontWrapper.h" />
+    <ClInclude Include="FW1\FW1Precompiled.h" />
+    <ClInclude Include="Geometry\InGame\AactiveTask\CafeTeria_UploadData.h" />
+    <ClInclude Include="Geometry\InGame\BackGroundImage.h" />
+    <ClInclude Include="Geometry\Debug\DebugPlayer.h" />
+    <ClInclude Include="Geometry\Debug\DebugMap.h" />
+    <ClInclude Include="Geometry\AnimationRect.h" />
+    <ClInclude Include="Interact\PlayerMove.h" />
+    <ClInclude Include="Manager\AnimationManager.h" />
+    <ClInclude Include="Geometry\Mesh.h" />
+    <ClInclude Include="Geometry\Line.h" />
+    <ClInclude Include="Manager\ImageManager.h" />
+    <ClInclude Include="Manager\MapManager.h" />
+    <ClInclude Include="Geometry\InGame\Mesh_player.h" />
+    <ClInclude Include="PipeLine\BufferResource\ConstantStruct.h" />
+    <ClInclude Include="Manager\SceneManager.h" />
+    <ClInclude Include="Manager\PlayerManager.h" />
+    <ClInclude Include="Geometry\InGame\AactiveTask\Sequrity_Sequrity.h" />
+    <ClInclude Include="TcpClient\Structs.h" />
+    <ClInclude Include="Util\RenderTargetTexture.h" />
+    <ClInclude Include="System\Camera.h" />
+    <ClInclude Include="Graphic.h" />
+    <ClInclude Include="PipeLine\BufferResource\BufferResource.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="PipeLine\Shader\Shader.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="System\Mouse.h" />
+    <ClInclude Include="System\Time.h" />
+    <ClInclude Include="Geometry\InGame\Task.h" />
+    <ClInclude Include="Manager\TaskManager.h" />
+    <ClInclude Include="Geometry\InGame\Ui.h" />
+    <ClInclude Include="Manager\UiManager.h" />
+    <ClInclude Include="Geometry\InGame\Ui_inGameRect.h" />
+    <ClInclude Include="Manager\TaskActtiveManager.h" />
+    <ClInclude Include="Util\Collision.h" />
+    <ClInclude Include="Util\Keyboard.h" />
+    <ClInclude Include="Util\SingletonBase.h" />
+    <ClInclude Include="System\Window.h" />
+    <ClInclude Include="PipeLine\BufferResource\VertexDatas.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

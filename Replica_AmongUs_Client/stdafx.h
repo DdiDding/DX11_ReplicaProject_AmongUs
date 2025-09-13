@@ -1,5 +1,10 @@
 #pragma once
 
+/*
+추가 필수
+C:\DX11\Include
+C:\DX11\Lib
+*/
 
 ////////////////////////////////////////////////////////
 //Include < ~ >
@@ -59,10 +64,7 @@ using namespace std;
 #include "TcpClient/Structs.h"
 #include "TcpClient/ClientData.h"
 
-
 #include "Graphic.h"
-
-
 
 
 ////////////////////////////////////////////////////////
